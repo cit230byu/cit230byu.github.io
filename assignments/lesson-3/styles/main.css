@@ -1,0 +1,23 @@
+#header, nav, main, footer {
+    margin: 0 auto; 
+    border: 1px solid #bbb; 
+    padding: 5px; 
+    background-color: lightblue; 
+    line-height: 1.5em;
+}
+
+ .style1 right, {
+    margin: 0 auto; 
+    border: 1px solid #bbb; 
+    padding: 5px; 
+    background-color: #eee; 
+    line-height: 1.5em;
+}
+
+.smaller {
+    margin: 0 auto; 
+    border: 1px solid #bbb; 
+    padding: 5px; 
+    background-color: deepskyblue; 
+    line-height: 1.5em;
+}
