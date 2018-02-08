@@ -1,0 +1,232 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { margin:0; box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Merriweather', Georgia, serif;
+    color: black;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+    margin: 1rem auto;
+    padding: .75rem;
+    max-width: 30rem;
+}
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+        @media only screen and (min-width: 37.5em) {
+            header, nav, main, footer { 
+                margin: 1rem auto;
+                padding: .75rem;
+                max-width: 37.5rem;
+            }
+        }
+          @media only screen and (min-width: 64em) {
+            header, nav, main, footer { 
+                margin: 1rem auto;
+                padding: .75rem;
+                max-width: 64rem; 
+            
+                }
+            }
+
+header, footer, footer a {
+    text-align: center;
+    background-color: #1A2930;
+    color: white;
+}
+
+header {
+    font-family: 'Heebo', Arial, sans-serif;
+    height: 200px;
+
+}
+
+header h1 {
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    padding: 5px;
+   
+}
+
+
+header img {
+    
+}
+
+header .subheading {
+    font-size: 20px;
+    font-family: 'Merriweather', Georgia, serif;
+    font-style: italic;
+    color: #1A2930;
+}
+
+nav {}
+@media only screen and (min-width: 37.5em){
+        nav button{
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width: 64em){
+        nav button{
+            display: none;
+        }
+    }
+nav button {}
+nav ul {
+    list-style-type: none;
+    margin: 5px 0 1px 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #F7CE3E;
+}
+
+@media only screen and (min-width: 37.5em) {
+    nav ul li {
+        float: left;
+        border-right: 1px solid white;
+        }
+    }
+@media only screen and (min-width: 64em) {
+    nav ul li {
+        float: left;
+        border-right: 1px solid white;
+        }
+    }
+nav ul li a {
+    font-family: 'Heebo', Arial, sans-serif;
+    font-size: 14px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 37.5em) {
+    nav ul li a {
+        font-size: 18px;
+        padding: 14px 5px;
+        }
+    }
+@media only screen and (min-width: 64em) {
+    nav ul li a {
+        font-size: 30px;
+        padding: 14px 16px;
+        }
+    }
+nav ul li.active a {
+    background-color: #C5C1C0;
+}
+nav ul li a:hover {
+    background-color: #F7CE3E;
+}
+
+main {}
+main h2 {
+    font-family: 'Heebo', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 0 0 10px 5px;
+}
+
+main h3 {
+    font-family: 'Heebo', Arial, sans-serif;
+    color: #1A2930;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 6px 0 2px 0;
+}
+main figure { 
+    margin: 0 0 1.2rem ; width:96%; 
+}
+main figure img { 
+    width: 105%; 
+}
+
+picture img {
+    display: block;
+    padding: .5rem 0 .5rem; 
+    width: 30%;
+    height: 30%;
+    
+    
+}
+section {}
+
+section.forecast {
+    display: none; 
+}
+
+    /* show for medium and large*/
+    @media only screen and (min-width: 37.5em){
+        section.forecast{
+            display: block;
+        }
+    }
+
+    @media only screen and (min-width: 64em){
+        section.forecast{
+            display: block;
+        }
+    }
+
+tbody td {
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    background-color: #F7CE3E;
+
+}
+.forecast h3 {
+    font-weight: bold;
+    background-color: darkgray;
+    padding: 8px;
+    text-align: left;
+}
+
+article p.town-article {
+    font-size: .9em;
+    
+}
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+   /* fill the page in the small/phone view */
+    margin: padding: .5rem 0 .5rem;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+/* show for medium and large*/
+    @media only screen and (min-width: 37.5em){
+        article p.town-article img{
+            margin: padding: .5rem 0 .5rem;
+            display: block;
+            height: 50%;
+            width: 50%;
+        }
+    }
+
+    @media only screen and (min-width: 64em){
+        article p.town-article img{
+            margin: padding: .5rem 0 .5rem;
+            display: block;
+            height: 50%;
+            width: 50%;
+        }
+    }
+
+
+footer {}
+footer aside {
+    font-size: .7em
+}
+footer>p {
+    font-size: .5em;
+} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
