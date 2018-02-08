@@ -204,7 +204,7 @@ article p.town-article img {  /* This structure refers to img elements that are 
 /* show for medium and large*/
     @media only screen and (min-width: 37.5em){
         article p.town-article img{
-            margin: padding: .5rem 0 .5rem;
+            padding: .5rem 0 .5rem;
             display: block;
             height: 50%;
             width: 50%;
@@ -213,7 +213,7 @@ article p.town-article img {  /* This structure refers to img elements that are 
 
     @media only screen and (min-width: 64em){
         article p.town-article img{
-            margin: padding: .5rem 0 .5rem;
+            padding: .5rem 0 .5rem;
             display: block;
             height: 50%;
             width: 50%;
