@@ -145,7 +145,8 @@ main figure {
     margin: 0 0 1.2rem ; width:96%; 
 }
 main figure img { 
-    width: 105%; 
+    width: 105%;
+    height: 105%;
 }
 
 picture img {
@@ -157,6 +158,27 @@ picture img {
     
 }
 section {}
+
+section h3{
+    font-size: 25px;
+}
+
+.highlow {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.current {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.conditions {
+    font-size: 16px;
+    font-style: italic;
+    padding-bottom: 5px;
+    
+}
 
 section.forecast {
     display: none; 
@@ -182,13 +204,25 @@ tbody td {
     background-color: #F7CE3E;
 
 }
+table {}
+
+th, td {
+    padding: 10px;
+}
 .forecast h3 {
+    font-size: 20px;
     font-weight: bold;
     background-color: darkgray;
     padding: 8px;
     text-align: left;
 }
 
+article h3 {
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 article p.town-article {
     font-size: .9em;
     
@@ -204,19 +238,20 @@ article p.town-article img {  /* This structure refers to img elements that are 
 /* show for medium and large*/
     @media only screen and (min-width: 37.5em){
         article p.town-article img{
-            padding: .5rem 0 .5rem;
-            display: block;
+            padding: 1rem 0 1rem 2rem;
             height: 50%;
             width: 50%;
+            float: left;
+            
         }
     }
 
     @media only screen and (min-width: 64em){
         article p.town-article img{
-            padding: .5rem 0 .5rem;
-            display: block;
-            height: 50%;
-            width: 50%;
+            padding: 1rem 0 1rem 2rem;
+            height: 70%;
+            width: 70%;
+            float: left;
         }
     }
 
