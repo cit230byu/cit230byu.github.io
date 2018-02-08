@@ -48,8 +48,7 @@ header h1 {
     font-size: 20px;
     letter-spacing: 0.2em;
     text-align: center;
-    padding: 5px;
-   
+    margin-top: -3px;
 }
 
 
@@ -62,6 +61,7 @@ header .subheading {
     font-family: 'Merriweather', Georgia, serif;
     font-style: italic;
     color: #1A2930;
+    margin: 2px 0 10px 0;
 }
 
 nav {}
@@ -195,7 +195,7 @@ article p.town-article {
 }
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
    /* fill the page in the small/phone view */
-    margin: padding: .5rem 0 .5rem;
+    padding: .5rem 0 .5rem;
     display: block;
     height: 100%;
     width: 100%;
