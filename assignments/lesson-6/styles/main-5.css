@@ -1,0 +1,289 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { margin:0; box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Merriweather', Georgia, serif;
+    color: black;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+    margin: 1rem auto;
+    padding: .75rem;
+    max-width: 30rem;
+}
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+        @media only screen and (min-width: 37.5em) {
+            header, nav, main, footer { 
+                margin: 1rem auto;
+                padding: .75rem;
+                max-width: 37.5rem;
+            }
+        }
+          @media only screen and (min-width: 64em) {
+            header, nav, main, footer { 
+                margin: 1rem auto;
+                padding: .75rem;
+                max-width: 64rem; 
+            
+                }
+            }
+
+header, footer, footer a {
+    text-align: center;
+    background-color: #1A2930;
+    color: white;
+}
+
+/* ------------HEADER--------------- */
+header {
+    font-family: 'Heebo', Arial, sans-serif;
+    height: 125px;
+
+}
+
+header h1 {
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin-top: -15px;
+}
+
+
+header figure.logo {}
+
+.subheading {
+    font-size: 20px;
+    font-family: 'Merriweather', Georgia, serif;
+    font-style: italic;
+    color: #1A2930;
+}
+
+/* ------------NAVIGATION--------------- */
+
+nav {
+    background-color: #F7CE3E;
+    font-family: 'Heebo', Arial, sans-serif;
+    margin-top: 60px;
+    
+    
+}
+
+@media only screen and (min-width: 37.5em){
+        nav button {
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width: 64em){
+        nav button {
+            display: none;
+        }
+    }
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #1A2930;
+    
+}
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 37.5em) {
+    nav ul li {
+        float: left;
+        
+        }
+    }
+@media only screen and (min-width: 64em) {
+    nav ul li {
+        float: left;
+        
+        }
+    }
+
+nav ul li a {
+    font-size: 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 37.5em) {
+    nav ul li a {
+        font-size: 16px;
+        padding: 14px 14px 14px;
+    
+        }
+    }
+@media only screen and (min-width: 64em) {
+    nav ul li a {
+        font-size: 32px;
+        padding: 14px;
+        }
+}
+
+nav ul li.active a {
+    background-color: #C5C1C0;
+    color: #1A2930;
+}
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+    nav ul.hide {
+        display: none;
+    }
+    
+main {}
+
+main h2 {
+    font-family: 'Heebo', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 10px 0 10px 0px;
+    text-align: center;
+}
+
+main h3 {
+    font-family: 'Heebo', Arial, sans-serif;
+    color: #1A2930;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 6px 0 2px 0;
+}
+main figure { 
+     width:96%; 
+}
+main figure.cityimage {
+    width: 100%;
+    margin: 0;
+}
+
+main figure.cityimage img {
+    width: 100%;
+}
+
+picture img {
+    display: block;
+    padding: .5rem 0 .5rem; 
+    width: 30%;
+    height: 30%;
+}
+section {}
+
+section h3{
+    font-size: 25px;
+}
+
+.highlow {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.current {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.conditions {
+    font-size: 16px;
+    font-style: italic;
+    padding-bottom: 5px;
+    
+}
+
+section.forecast {
+    display: none; 
+}
+
+    /* show for medium and large*/
+    @media only screen and (min-width: 37.5em){
+        section.forecast{
+            display: block;
+        }
+    }
+
+    @media only screen and (min-width: 64em){
+        section.forecast{
+            display: block;
+        }
+    }
+
+tbody td {
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    background-color: #F7CE3E;
+
+}
+table {}
+
+th, td {
+    padding: 10px;
+}
+.forecast h3 {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: darkgray;
+    padding: 8px;
+    text-align: left;
+}
+
+article h3 {
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+article p.town-article {
+    font-size: .9em;
+    
+}
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+   /* fill the page in the small/phone view */
+    padding: .5rem 0 .5rem;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+/* show for medium and large*/
+    @media only screen and (min-width: 37.5em){
+        article p.town-article img{
+            padding: 1rem 0 1rem 2rem;
+            height: 50%;
+            width: 50%;
+            float: left;
+            
+        }
+    }
+
+    @media only screen and (min-width: 64em){
+        article p.town-article img{
+            padding: 1rem 0 1rem 2rem;
+            height: 70%;
+            width: 70%;
+            float: left;
+        }
+    }
+
+
+footer {}
+footer aside {
+    font-size: .7em
+}
+footer>p {
+    font-size: .6em;
+    font-family: 'Heebo', Arial, sans-serif;
+} 
