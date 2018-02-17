@@ -1,15 +1,37 @@
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
-  
+  header, nav, main, footer { 
+    margin: 1rem auto;
+    padding: .75rem;
+    max-width: 64em; 
+     }
     
-    /*nav ul li a {
+    nav {
+    margin-top: 80px;
+    }
+    
+    nav ul li {
+        float: left;
+        }
+    
+    nav ul li a {
         font-size: 32px;
         padding: 14px;
-        margin: 10px 0px 10px;;
-        }*/
+        }
+    
+    section.forecast{
+            display: block;
+        }
     
   article p.town-article img { 
       width: 29.333%; 
     }
   
+    /*article p.town-article img{
+            padding: 1rem 0 1rem 2rem;
+            height: 70%;
+            width: 70%;
+            float: left;
+        }*/
+    
 }

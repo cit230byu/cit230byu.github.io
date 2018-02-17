@@ -13,10 +13,10 @@ body {
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
     margin: 1rem auto;
     padding: .75rem;
-    max-width: 30rem;
+    max-width: 37.5em;
 }
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-        @media only screen and (min-width: 37.5em) {
+       /* @media only screen and (min-width: 37.5em) {
             header, nav, main, footer { 
                 margin: 1rem auto;
                 padding: .75rem;
@@ -30,7 +30,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
                 max-width: 64rem; 
             
                 }
-            }
+            }*/
 
 header, footer, footer a {
     text-align: center;
@@ -60,6 +60,7 @@ header figure.logo {}
     font-family: 'Merriweather', Georgia, serif;
     font-style: italic;
     color: #1A2930;
+    margin-top: 10px;
 }
 
 /* ------------NAVIGATION--------------- */
@@ -97,7 +98,7 @@ nav ul {
     overflow: hidden;
 }
 
-@media only screen and (min-width: 37.5em) {
+/*@media only screen and (min-width: 37.5em) {
     nav ul li {
         float: left;
         
@@ -108,7 +109,7 @@ nav ul {
         float: left;
         
         }
-    }
+    } */
 
 nav ul li a {
     font-size: 20px;
@@ -119,11 +120,10 @@ nav ul li a {
     text-decoration: none;
 }
 
-@media only screen and (min-width: 37.5em) {
+/*@media only screen and (min-width: 37.5em) {
     nav ul li a {
         font-size: 16px;
         padding: 14px 14px 14px;
-    
         }
     }
 @media only screen and (min-width: 64em) {
@@ -131,7 +131,7 @@ nav ul li a {
         font-size: 32px;
         padding: 14px;
         }
-}
+}*/
 
 nav ul li.active a {
     background-color: #C5C1C0;
@@ -208,7 +208,7 @@ section.forecast {
 }
 
     /* show for medium and large*/
-    @media only screen and (min-width: 37.5em){
+   /* @media only screen and (min-width: 37.5em){
         section.forecast{
             display: block;
         }
@@ -218,7 +218,7 @@ section.forecast {
         section.forecast{
             display: block;
         }
-    }
+    }*/
 
 tbody td {
     font-size: 14px;
@@ -258,7 +258,7 @@ article p.town-article img {  /* This structure refers to img elements that are 
     width: 100%;
 }
 
-/* show for medium and large*/
+/* 
     @media only screen and (min-width: 37.5em){
         article p.town-article img{
             padding: 1rem 0 1rem 2rem;
@@ -276,7 +276,7 @@ article p.town-article img {  /* This structure refers to img elements that are 
             width: 70%;
             float: left;
         }
-    }
+    }*/
 
 
 footer {}
