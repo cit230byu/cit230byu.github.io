@@ -1,0 +1,363 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { margin:0; box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Merriweather', Georgia, serif;
+    color: black;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+    margin: 1rem auto;
+    padding: .75rem;
+    max-width: 37.5em;
+}
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+       /* @media only screen and (min-width: 37.5em) {
+            header, nav, main, footer { 
+                margin: 1rem auto;
+                padding: .75rem;
+                max-width: 37.5rem;
+            }
+        }
+          @media only screen and (min-width: 64em) {
+            header, nav, main, footer { 
+                margin: 1rem auto;
+                padding: .75rem;
+                max-width: 64rem; 
+            
+                }
+            }*/
+
+header, footer, footer a {
+    text-align: center;
+    background-color: #1A2930;
+    color: white;
+}
+
+/* ------------HEADER--------------- */
+header {
+    font-family: 'Heebo', Arial, sans-serif;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+/*header h1 {
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin-top: -15px;
+}*/
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    text-align: left;
+    margin-left: -10px;
+    align-self: center;
+    
+}
+
+figure.logo {
+    width: auto;
+    margin-left: 10px;
+    align-self: center;
+}
+
+.subheading {
+    font-size: 20px;
+    font-family: 'Merriweather', Georgia, serif;
+    font-style: italic;
+    color: #1A2930;
+    text-align: center;
+    
+}
+
+/* ------------NAVIGATION--------------- */
+
+nav {
+    background-color: #F7CE3E;
+    font-family: 'Heebo', Arial, sans-serif; 
+}
+
+    @media only screen and (min-width: 37.5em){
+        nav button {
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width: 64em){
+        nav button {
+            display: none;
+        }
+    }
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #1A2930;
+    
+}
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+/*@media only screen and (min-width: 37.5em) {
+    nav ul li {
+        float: left;
+        
+        }
+    }
+@media only screen and (min-width: 64em) {
+    nav ul li {
+        float: left;
+        
+        }
+    } */
+
+nav ul li a {
+    font-size: 24px;
+    text-transform: uppercase;
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+/*@media only screen and (min-width: 37.5em) {
+    nav ul li a {
+        font-size: 16px;
+        padding: 14px 14px 14px;
+        }
+    }
+@media only screen and (min-width: 64em) {
+    nav ul li a {
+        font-size: 32px;
+        padding: 14px;
+        }
+}*/
+
+nav ul li a:link {
+    color: white;
+}
+
+nav ul li a:visited {
+    color: goldenrod;
+}
+
+nav ul li a:hover {
+    color: #1A2930;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+nav ul li a:active {
+    color: white;
+}
+    nav ul.hide {
+        display: none;
+    }
+    
+main {
+
+}
+
+main h2 {
+    display: flex;
+    font-family: 'Heebo', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: left;
+   
+}
+
+main h3 {
+    font-family: 'Heebo', Arial, sans-serif;
+    color: #1A2930;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 6px 0 2px 0;
+}
+main figure { 
+     width: 96%; 
+}
+main figure.cityimage {
+    width: 100%;
+    margin: 0;
+}
+
+main figure.cityimage img {
+    width: 100%;
+}
+
+picture img {
+    display: flex;
+    padding: .5rem 0 .5rem; 
+    width: 50%;
+    height: 50%;
+}
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+section h3{
+    font-size: 25px;
+}
+
+.highlow {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.current {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.conditions {
+    font-size: 16px;
+    font-style: italic;
+    padding-bottom: 5px;
+
+}
+
+.windchill {
+    margin-bottom: 50px;
+}
+
+section.forecast {
+    display: none; 
+}
+
+    /* show for medium and large*/
+   /* @media only screen and (min-width: 37.5em){
+        section.forecast{
+            display: block;
+        }
+    }
+
+    @media only screen and (min-width: 64em){
+        section.forecast{
+            display: block;
+        }
+    }*/
+
+tbody td {
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    background-color: #F7CE3E;
+
+}
+table {}
+
+th, td {
+    padding: 10px;
+}
+.forecast h3 {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: darkgray;
+    padding: 8px;
+    text-align: left;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+
+article h3 {
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+article p.town-article {
+    font-size: .9em;
+    
+}
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+   /* fill the page in the small/phone view */
+    padding: .5rem 0 .5rem;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+/* 
+    @media only screen and (min-width: 37.5em){
+        article p.town-article img{
+            padding: 1rem 0 1rem 2rem;
+            height: 50%;
+            width: 50%;
+            float: left;
+            
+        }
+    }
+
+    @media only screen and (min-width: 64em){
+        article p.town-article img{
+            padding: 1rem 0 1rem 2rem;
+            height: 70%;
+            width: 70%;
+            float: left;
+        }
+    }*/
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+footer aside {
+    font-size: .7em
+}
+footer>p {
+    font-size: .6em;
+    font-family: 'Heebo', Arial, sans-serif;
+} 
+
+
+/* ------------GALLERY--------------- */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.cards {
+    max-width: 960px;
+    margin: 0 auto 20px
+}
+
+article {
+    position: relative
+}
+
+.article-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.article-title {
+    font-size: 12px;
+    position: absolute;
+    margin-top: -50px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2)
+}
+
+

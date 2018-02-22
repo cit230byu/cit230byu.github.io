@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Franklin Weather | Weather Elements</title>
+        <meta name="author" content="Cristina Irwin">
+        <meta name="description" content="Weather summary for the city of Franklin">
+        <!-- Google API font reference -->    
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+        <!-- external style references in the proper cascading order -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    </head>
+    
+    <body>
+        <header>
+            <figure class="logo">
+                <img src="images/LogoWhite.png" alt="Logo for Weather Elements"> 
+                <!--srcset="images/logo1.png 1x, images/logo2.png 2x, images/logo3.png 3x"-->
+            </figure>
+          
+            <h1>FRANKLIN'S CURRENT WEATHER</h1>
+           
+            
+      </header>
+        <div>
+            <h3 class="subheading">Gather weather for your day.</h3>
+        </div>
+      <!-- site navigation use placeholder references -->
+          <nav>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="#">Home</a></li>
+                <li><a href="franklin-7.html">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="gallery-7.html">Gallery</a></li>
+            </ul>		
+          </nav>
+        <section class="cards">
+            <div class="article">
+                <img class="article-img" src="images/photo1.jpg" alt="wooden bridge with trees spring">
+                <h3 class="article-title">Wooden bridge with trees</h3>
+            </div>
+            
+            <div class="article">
+                <img class="article-img" src="images/photo2.jpg" alt="mountain with fog">
+                <h3 class="article-title">Fog rolling in over the mountain</h3>
+            </div>
+            
+            <div class="article">
+                <img class="article-img" src="images/photo3.jpg" alt="Man sitting by the river">
+                <h3 class="article-title">Looking at the river</h3>
+            </div>
+            
+            <div class="article">
+                <img class="article-img" src="images/photo4.jpg" alt="Road with sunset sky">
+                <h3 class="article-title">Road at sunset</h3>
+            </div>
+            
+            <div class="article">
+                <img class="article-img" src="images/photo5.jpg" alt="Mountain peak at sunset">
+                <h3 class="article-title">Snow covered mountain at sunset</h3>
+            </div>
+            
+            <div class="article">
+                <img class="article-img" src="images/photo6.jpg" alt="wooden bridge with trees fall">
+                <h3 class="article-title">Wooden bridge with trees in fall</h3>
+            </div>
+        </section>
+            
+                
+            
+            
+           <!-- <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>-->
+    
+    <footer>
+        <aside>
+          Cristina Iriwn
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Elements | <span id="currentdate">Placeholder</span></p>
+    </footer>
+        
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdatetest.js"></script>
+        <script src="scripts/windchill2.js"></script>
+        
+    </body>
+    
+</html>
