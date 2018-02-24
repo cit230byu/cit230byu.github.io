@@ -166,7 +166,7 @@ nav ul li a:active {
     }
     
 main {
-
+    display:grid;
 }
 
 main h2 {
@@ -187,7 +187,7 @@ main h3 {
     padding: 6px 0 2px 0;
 }
 main figure { 
-     width: 96%; 
+     width: 100%; 
 }
 main figure.cityimage {
     width: 100%;
@@ -330,34 +330,31 @@ footer>p {
 
 
 /* ------------GALLERY--------------- */
-.cards {
+
+
+div.weatherGallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(1, 100%);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-}
-.cards {
-    max-width: 960px;
-    margin: 0 auto 20px
+    
 }
 
-article {
-    position: relative
-}
-
-.article-img {
-    height: 200px;
-    width: 100%;
+div.weatherGallery figure {
+    text-align: center;
+    margin: 0px 0px 0px 0px;
     object-fit: cover;
+    border: 1px solid #b1b1b1;
 }
 
-.article-title {
-    font-size: 12px;
-    position: absolute;
-    margin-top: -50px;
+div.weatherGallery figure img {
+    object-fit: cover;
     width: 100%;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.2)
+    padding: 0;
 }
 
-
+div.weatherGallery figure figurecaption {
+    text-align: center; 
+    font-size: 10px;
+    
+}

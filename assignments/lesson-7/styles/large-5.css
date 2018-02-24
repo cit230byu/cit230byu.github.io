@@ -5,7 +5,7 @@
     padding: .75rem;
     max-width: 64em; 
      }
-    
+    /* ------------header---------------*/
     
     figure.logo {
     width: 300px;
@@ -27,7 +27,7 @@
     margin-top: 30px;
     }
     
-    
+    /* ------------Nav---------------*/
     nav {
     margin-top: 30px;
     display: flex;
@@ -47,6 +47,7 @@
         align-self: center;
         }
     
+    /* ------------Content---------------*/
     main h2 {
         font-size: 3rem;
     }
@@ -76,6 +77,27 @@
     .article-img:hover {
       box-shadow: 5px 5px 10px gray;
     }
+    
+    
+    /* ------------Gallery---------------*/
+    div.weatherGallery {
+        grid-template-columns: repeat(3, 32%);
+        
+    }
+    
+    div.weatherGallery figure {
+    text-align: center;
+    margin: 1px 1px 1px 1px;
+        }
+    
+    
+    div.weatherGallery figure:hover {
+        box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+    }
+    
+    
+    
+    
     
 }
 

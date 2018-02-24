@@ -53,8 +53,8 @@
             <section class="weather">
                 <h3 id="title">Weather Summary</h3>    
                 <div class="highlow">
-                    <p>High:90&deg;</p>  
-                    <p>Low:66&deg;</p>  
+                    <p>High:<strong> 90&deg;</strong></p>  
+                    <p>Low:<strong> 66&deg;</strong></p>  
                 </div>
 
                 <div class="current">
@@ -65,20 +65,12 @@
                 </div>  
                 
                 <div class="windchill">
-                    
-                    <h4>Enter Temperature in Fº:<input type="text" id='tInputBox' size="12"></h4>
-                    <br>
-                    <h4>Enter Wind Speed in MPH:<input type="text" id='sInputBox' size="12"></h4>
-                    <br>
-                    <input type="submit" onclick="doInputOutput()" value="Run Calculation">
-                    <p>Wind Chill: </p><div id="outputDiv"></div>
-                    
-
+                    <p>Wind Chill: <strong id="windChill"></strong></p>
                 </div>
                 
                 <div class="conditions">
-                    <p>Precipitation:0&percnt;</p>  
-                    <p>Wind Speed: 5 mph SW</p>  
+                    <p>Precipitation: <strong>0&percnt;</strong></p>  
+                    <p>Wind Speed: <strong>5 mph SW</strong></p>  
                 </div>           
             </section>
 
@@ -135,7 +127,7 @@
 
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdatetest.js"></script>
-        <script src="scripts/windchill2.js"></script>
+        <script src="scripts/windchill.js"></script>
             
 
     </body>

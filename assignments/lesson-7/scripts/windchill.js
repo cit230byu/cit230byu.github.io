@@ -1,16 +1,10 @@
-function doInputOutput() {
+//JavaScript Document
+var high = 90;
+var low = 66;
+var windspeed = 5;
 
-var speed = parseFloat(document.getElementById('sInputBox').value); //get a wind speed from the second text field
-var h = parseFloat(document.getElementById('hInputBox').value); //get a high temp from the second text field
-var l = parseFloat(document.getElementById('lInputBox').value); //get a low temp from the second text field
-var tempF = (h+l) / 2 //compute temperature
-var wchill = windChill(tempF, speed) //store the value returned by windChill in a variable
-document.getElementById ('outputDiv').innerHTML = "Wind Chill factor is " + wchill + " Fahrenheit";
-} //output the value returned//
+var averageTemp = ((high -low) / 2) + low;
+var windChill = 35.74 + 0.6215 * averageTemp - 35.75 * Math.pow(windspeed, 0.16) + 0.4275 * averageTemp * Math.pow(windspeed, 0.16);
+windChill = Math.round(windChill);
 
-// Compute windchill
-
-// taking temperature and speed from first function
-function windChill(tempF, speed)  {
-return Math.round(35.74 + (0.6215 * tempF) - (35.75 * (speed ** 0.16)) + ((0.4275 * tempF) * (speed ** 0.16)));
-} //calculating with formula then returning value
+document.getElementById("windChill").innerHTML= windChill;
