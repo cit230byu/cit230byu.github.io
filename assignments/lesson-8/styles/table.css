@@ -1,27 +1,30 @@
+body {
+   text-align: center; 
+}
+
 table {
     font-family: Ubuntu, sans-serif;
     border-collapse: collapse;
     border: 1px solid rgb(200,200,200);
     font-size:.83rem;
-    background-color: #e7f0ed;
     width: 245px;
+    box-shadow: 5px 5px 15px gray;
+    margin: auto;
     }
+
 td, th {
     border: 1px solid rgb(190,190,190);
     padding: 5px 8px;
     }
+
 td {
       text-align: center;
     }
-tfoot {
-    font-size: .6rem;
-    background-color: #7fb9c2;
-    }
+
 thead {
     font-size: 1.3rem;
     font-weight: bolder;
     letter-spacing: 1px;
-    background-color: #7fb9c2;
     padding-top: 20px;
     padding-bottom: 5px;
     }
@@ -33,6 +36,14 @@ thead {
     color: white;
     }
           
+thead>tr>th{
+    background-color: #7fb9c2;
+}
+
+tfoot>tr>td {
+    font-size: .6rem;
+    background-color: #7fb9c2;
+}
 #blackfriday td:first-child {
     font-style: italic;
     }
@@ -41,6 +52,10 @@ thead {
     color: white;
     }
           
-tr:nth-child(even) {
+tr:nth-child(odd) {
     background-color: #e7ffed;
+    }
+
+tr:nth-child(even) {
+    background-color: #e7f0ed;
     }
