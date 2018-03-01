@@ -1,0 +1,46 @@
+table {
+    font-family: Ubuntu, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid rgb(200,200,200);
+    font-size:.83rem;
+    background-color: #e7f0ed;
+    width: 245px;
+    }
+td, th {
+    border: 1px solid rgb(190,190,190);
+    padding: 5px 8px;
+    }
+td {
+      text-align: center;
+    }
+tfoot {
+    font-size: .6rem;
+    background-color: #7fb9c2;
+    }
+thead {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    background-color: #7fb9c2;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    }
+#subheads td {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background-color: #628ca6;
+    color: white;
+    }
+          
+#blackfriday td:first-child {
+    font-style: italic;
+    }
+#box td:last-child {
+    background-color: #628ca6;
+    color: white;
+    }
+          
+tr:nth-child(even) {
+    background-color: #e7ffed;
+    }
