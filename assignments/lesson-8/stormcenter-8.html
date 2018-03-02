@@ -47,16 +47,19 @@
       <main>
         <p> Progress:<progress value="3" max="5"></progress></p>
           <form action="thanks.html" method="get" enctype="multipart/form-data" name="weather">	
+        <div class="chunk">
             <fieldset>
-                <legend><span>Personal Information</span></legend>
+                <legend class="hd"><span>Personal Information</span></legend>
                     <label><span>Full Name:</span><input name="Fullname" type="text" placeholder="Full Name" pattern="[a-zA-Z -._]{5,}" required autofocus title="Please provide your first and last name (minimum of 5 characters)"></label>
                     <label><span>Email:</span><input name="email" type="email" placeholder="John@gmail.com" required title="Please provide a valid email address"></label>
                     <label><span>Phone:</span><input name="tel" type="tel" required title="Please provide a valid phone number"></label>
                     <label><span>Zip Code:</span><input name="zipcode" type="number" required title ="Please provide your Zip Code"></label>
             </fieldset>
+        </div>
 
+        <div class="chunk">
             <fieldset>
-                <legend><span>Storm Information</span></legend>
+                <legend class="hd"><span class="text">Storm Information</span></legend>
                     <label><span>Storm Date:</span><input name="date" type="date"></label>
                     <label>
                     <span>Storm Type:</span>  
@@ -88,6 +91,7 @@
                 <label><span>Additional Information:</span><textarea name="additionalinfo" rows="10" cols="30"></textarea></label>
     
             </fieldset>
+        </div>
 
 	
             <input type="submit" value="Submit" class="submitBtn">	
