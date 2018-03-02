@@ -1,0 +1,75 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+    
+header, nav, main, footer { 
+        margin: 1rem auto;
+        padding: .75rem;
+        max-width: 37.5em;
+     }
+     /*--------------Header--------------------*/
+    header h1 {
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    }
+    
+    .subheading {
+        margin-top: 0px;
+    }
+     /*--------------Nav--------------------*/
+  nav button { 
+      display: none; 
+    }  /* hamburger button does not need to be shown */
+    
+    nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    nav ul li {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        }
+    
+
+    nav ul.hide {
+        display: flex;
+    }
+    
+    nav ul li a {
+        font-size: 14px;
+        padding: 14px 11px 14px;
+        }
+ /*--------------Content--------------------*/
+    section.forecast{
+            display: flex;
+        }
+    article {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+  
+  article p.town-article img { 
+      width: 62.666%; 
+    }  /* responsive images */
+
+    /*--------------Gallery--------------------*/
+    div.weatherGallery {
+        grid-template-columns: repeat(2, 49%);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    
+    
+}
+
