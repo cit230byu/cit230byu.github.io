@@ -1,0 +1,103 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  header, nav, main, footer { 
+    margin: 1rem auto;
+    padding: .75rem;
+    max-width: 64em; 
+     }
+    /* ------------header---------------*/
+    
+    figure.logo {
+    width: 300px;
+}
+    
+    header h1 {
+    font-size: 2rem;
+    letter-spacing: 0.4em;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+    .subheading {
+    font-size: 30px;
+    font-family: 'Merriweather', Georgia, serif;
+    font-style: italic;
+    color: #1A2930;
+    text-align: center;
+    margin-top: 30px;
+    }
+    
+    /* ------------Nav---------------*/
+    nav {
+    margin-top: 30px;
+    display: flex;
+    height: 100px;
+    }
+    
+    nav ul li {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        }
+    
+    nav ul li a {
+        font-size: 26px;
+        padding: 14px 10px 14px;
+        display: flex;
+        align-self: center;
+        }
+    
+    /* ------------Content---------------*/
+    main h2 {
+        font-size: 3rem;
+    }
+    
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    section.forecast{
+        display: flex;
+        flex-direction: column;
+        }
+    #title {
+        align-self: center;
+        font-size: 32px;
+        background-color: gray;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        color: white;
+    }
+    article p.town-article img { 
+      width: 30%; 
+    }
+  
+    .article-img:hover {
+      box-shadow: 5px 5px 10px gray;
+    }
+    
+    
+    /* ------------Gallery---------------*/
+    div.weatherGallery {
+        grid-template-columns: repeat(3, 32%);
+        
+    }
+    
+    div.weatherGallery figure {
+    text-align: center;
+    margin: 1px 1px 1px 1px;
+        }
+    
+    
+    div.weatherGallery figure:hover {
+        box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+    }
+    
+    
+    
+    
+    
+}
+
