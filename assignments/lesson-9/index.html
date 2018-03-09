@@ -43,13 +43,61 @@
             </ul>		
           </nav>
         
-    
+    <main id="homepage">
         
-        <section id="homepage">
+        <section>
+            <h1 id="franklin"></h1>
+            <p id= "fmotto"></p>
+            <p class="bold">Year Founded: <span id= "fyear"></span></p>
+            <p class="bold">Population: <span id="fpopulation"></span></p>
+            <p class="bold">Rainfall: <span id="frainfall"></span> inches</p>
+            <h4>Events</h4>
+            <ul>
+                <li id="fevent1"></li>
+                <li id="fevent2"></li>
+                <li id="fevent3"></li>
+            
+        
+            </ul>
+        
+        </section>
+             
+        
+        <section>
+            <h1 id="greenville"></h1>
+            <p id= "gmotto"></p>
+            <p class="bold">Year Founded: <span id= "gyear"></span></p>
+            <p class="bold">Population: <span id="gpopulation"></span></p>
+            <p class="bold">Rainfall: <span id="grainfall"></span> inches</p>
+            <h4>Events</h4>
+            <ul>
+                <li id="gevent1"></li>
+                <li id="gevent2"></li>
+                <li id="gevent3"></li>
+            
+        
+            </ul>
         
         </section>
         
+        <section>
+            <h1 id="springfield"></h1>
+            <p id= "smotto"></p>
+            <p class="bold">Year Founded: <span id= "syear"></span></p>
+            <p class="bold">Population: <span id="spopulation"></span></p>
+            <p class="bold">Rainfall: <span id="srainfall"></span> inches</p>
+            <h4>Events</h4>
+            <ul>
+                <li id="sevent1"></li>
+                <li id="sevent2"></li>
+                <li id="sevent3"></li>
             
+        
+            </ul>
+        
+        </section>
+        
+      </main>      
     
     <footer>
         <aside>
@@ -62,66 +110,62 @@
         <script src="scripts/currentdatetest.js"></script>
         <script>
             
-            var section = document.querySelector('section');
-        
-            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-            var request = new XMLHttpRequest();
-                request.open('GET', requestURL);
-                request.responseType = 'json';
-                request.send();
-        
-                request.onload = function() {
-                    var Towns = request.response;
-                    showTowns(Towns);
-                    }
+            var townObject = new XMLHttpRequest();
 
-        
-            function showTowns(jsonObj) {
-            var townNames = jsonObj['towns'];
-      
-            for (var i = 0; i < townNames.length; i++) {
-                var myArticle = document.createElement('article');
-                var myH2 = document.createElement('h2');
-                var myPara1 = document.createElement('p');
-                var myPara2 = document.createElement('p');
-                var myPara3 = document.createElement('p');
-                var myPara4 = document.createElement('p');
-                var myPara5 = document.createElement('p');
-                var myList = document.createElement('ul');
+townObject.open('GET', 'https://byui-cit230.github.io/weather/data/towndata.json', 'true');
 
-            myH2.textContent = townNames[i].name;
-            myPara1.textContent = 'Motto: ' + townNames[i].motto;
-            myPara2.textContent = 'Founded: ' + townNames[i].yearFounded;
-            myPara3.textContent = 'Population: ' + townNames[i].currentPopulation;
-            myPara4.textContent = 'Average RainFall: ' + townNames[i].averageRainfall;
-            myPara5.textContent = 'Events:';
-        
-            var townEvents = townNames[i].events;
-                for (var j = 0; j < townEvents.length; j++) {
-                var listItem = document.createElement('li');
-                listItem.textContent = townEvents[j];
-                myList.appendChild(listItem);
-            }  
-        
-            myArticle.appendChild(myH2);
-            myArticle.appendChild(myPara1);
-            myArticle.appendChild(myPara2);
-            myArticle.appendChild(myPara3);
-            myArticle.appendChild(myPara4);
-            myArticle.appendChild(myPara5);
-            myArticle.appendChild(myList);
+townObject.send();
 
-            section.appendChild(myArticle);
-            }
-        }   
-        
-        
-        
-        
-        
-        
-        
-        
+townObject.onload = function() {
+    
+    var townInfo = JSON.parse(townObject.responseText);
+    console.log(townInfo);
+    
+    document.getElementById('franklin').innerHTML = townInfo.towns["0"].name;
+    document.getElementById('fmotto').innerHTML = townInfo.towns["0"].motto;
+    document.getElementById('fyear').innerHTML = townInfo.towns["0"].yearFounded;
+    document.getElementById('fpopulation').innerHTML = townInfo.towns["0"].currentPopulation;
+    document.getElementById('frainfall').innerHTML = townInfo.towns["0"].averageRainfall;
+    document.getElementById('fevent1').innerHTML = townInfo.towns["0"].events["0"];
+    document.getElementById('fevent2').innerHTML = townInfo.towns["0"].events["1"];
+    document.getElementById('fevent3').innerHTML = townInfo.towns["0"].events["2"];
+
+
+
+
+    
+    document.getElementById('greenville').innerHTML = townInfo.towns["1"].name;
+    document.getElementById('gmotto').innerHTML = townInfo.towns["1"].motto;
+    document.getElementById('gyear').innerHTML = townInfo.towns["1"].yearFounded;
+    document.getElementById('gpopulation').innerHTML = townInfo.towns["1"].currentPopulation;
+    document.getElementById('grainfall').innerHTML = townInfo.towns["1"].averageRainfall;
+    document.getElementById('gevent1').innerHTML = townInfo.towns["1"].events["0"];
+    document.getElementById('gevent2').innerHTML = townInfo.towns["1"].events["1"];
+    document.getElementById('gevent3').innerHTML = townInfo.towns["1"].events["2"];
+
+
+
+    
+    document.getElementById('springfield').innerHTML = townInfo.towns["3"].name;
+    document.getElementById('smotto').innerHTML = townInfo.towns["3"].motto;
+    document.getElementById('syear').innerHTML = townInfo.towns["3"].yearFounded;
+    document.getElementById('spopulation').innerHTML = townInfo.towns["3"].currentPopulation;
+    document.getElementById('srainfall').innerHTML = townInfo.towns["3"].averageRainfall;
+    document.getElementById('sevent1').innerHTML = townInfo.towns["3"].events["0"];
+    document.getElementById('sevent2').innerHTML = townInfo.towns["3"].events["1"];
+    document.getElementById('sevent3').innerHTML = townInfo.towns["3"].events["2"];
+
+
+
+
+
+    
+
+
+
+    
+    
+} //end of onload
         
         </script>
         

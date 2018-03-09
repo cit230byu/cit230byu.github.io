@@ -45,37 +45,39 @@
           </nav>
 
       <main>
-        <h2>FRANKLIN</h2>
-          <h1>Weather Conditions for <span id="place"> City, State</span></h1>
+          <h2>Weather Conditions for</h2>
+          <p><span id="place"> City, State</span></p>
+              
           <figure class="cityimage">
             <img src="images/franklinps6.jpg" alt="Franklin town image" sizes="100vw" srcset="images/franklin400.jpg 400w, images/franklin800.jpg 800w, images/franklin1200.jpg 1200w">
           </figure>
 
             <section class="weather">
-                <h3 id="title">Weather Summary</h3>    
+                <h3> Weather Summary</h3>    
                 <div class="highlow">
-                    <p>Current Temperature is <span id="currentTemp">90</span>&deg; F</p>
-                    <p>High:<strong> 90&deg;</strong></p>  
-                    <p>Low:<strong> 66&deg;</strong></p>
-                    <p>UV is <span id="currentUv">0</span></p>
-                    <p>Feels like: <span id="feelslike">0</span>&deg;F</p>
-                    <p> Wind Direction is <span id="winddirection">South</span></p>
-                    <p>Currrently:</p>
+                    <p><span class="bold">Current Temperature: </span><span id="currentTemp">90</span>&deg; F</p>
+                    <p><span class="bold">High:</span><strong> 90&deg;</strong></p>  
+                    <p><span class="bold">Low:</span><strong> 66&deg;</strong></p>
+                    <p><span class="bold">Feels like: </span><span id="feelslike">0</span>&deg;F</p>
+                    <p><span class="bold"> Wind Direction:</span> <span id="winddirection">South</span></p>
+                    
+                    <p><span class="bold">Wind Chill:</span><span id="windChill"></span></p>
+                    <div class="conditions">
+                    <p><span class="bold">Precipitation:</span><span id="precip">?</span> inches today</p>
+                    <p><span class="bold">Wind Speed:</span><span id="wind">5 mph SW</span> mph</p>
+                     <p><span class="bold">UV:</span><span id="currentUv">0</span></p>
+                </div>        
+                    
+            
+                    <h4 class="title">Current Weather</h4>
                     <picture>
                         <img id="wicon" src="" alt="current weather">
                     </picture>
                  </div>
                 
-                <div class="windchill">
-                    <p>Wind Chill: <strong id="windChill"></strong></p>
-                    
-                </div>
                 
-                <div class="conditions">
-                    <p>Precipitation is <span id="precip">?</span>today</p>
-                    <p>Precipitation: <strong>0&percnt;</strong></p>  
-                    <p>Wind Speed: <strong>5 mph SW</strong></p>  
-                </div>           
+                
+                   
             </section>
 
             <section class="forecast">
