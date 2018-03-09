@@ -12,6 +12,7 @@ weatherObject.onload = function() {
     console.log(weatherInfo);
     
     document.getElementById('place').innerHTML = weatherInfo.current_observation.display_location.full;
+    document.getElementById('precip').innerHTML = weatherInfo.current_observation.precip_today_in;
     document.getElementById('currentTemp').innerHTML = weatherInfo.current_observation.temp_f;
     document.getElementById('currentUv').innerHTML = weatherInfo.current_observation.UV;
     document.getElementById('feelslike').innerHTML = weatherInfo.current_observation.feelslike_f;
