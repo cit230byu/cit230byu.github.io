@@ -1,29 +1,31 @@
-{ 
-	"table" : [
-	{
-		"service": "Suspension Tuning",
-		"description": "Fork or rear tuning or overhaul, from oil changes to seal replacements."
-		"cost": "$39"
-	},
-	{
-		"service": "Tubeless Conversion",
-		"description": "Switch to the system that fixes your flat while you ride. YOu can run lower pressure which means beter traction. We will teach you how to maintain this system."
-		"cost": "$69"
-	},
-	{
-		"service": "Bicycle Restoration",
-		"description": "We care about your classic ride and we'll do our best to bring it back to its original beauty."
-		"cost": "Call for free quote"
-	},
-	{
-		"service": "Custom Wheel Building",
-		"description": "Have your dreams come true. Pick hubs, rims, spokes . . ."
-		"cost": "Call for free quote"
-	},
-	{
-		"service": "Bike Boxing",
-		"description": "We will package your bike for shipping to anywhere"
-		"cost": "$40"
-	},
-]
+{
+	"table": [{
+			"service": "Suspension Tuning",
+			"description": "Fork or rear tuning or overhaul, from oil changes to seal replacements.",
+			"cost": "$39"
+		},
+		{
+			"service": "Tubeless Conversion",
+			"description": "Switch to the system that fixes your flat while you ride. YOu can run lower pressure which means beter traction. We will teach you how to maintain this system.",
+			"cost": "$69"
+		},
+
+		{
+			"service": "Bicycle Restoration",
+			"description": "We care about your classic ride and we'll do our best to bring it back to its original beauty.",
+			"cost": "Call for free quote"
+		},
+
+		{
+			"service": "Custom Wheel Building",
+			"description": "Have your dreams come true. Pick hubs, rims, spokes . . .",
+			"cost": "Call for free quote"
+		},
+
+		{
+			"service": "Bike Boxing",
+			"description": "We will package your bike for shipping to anywhere",
+			"cost": "$40"
+		}
+	]
 }
