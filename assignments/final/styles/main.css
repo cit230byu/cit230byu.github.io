@@ -1,0 +1,689 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { margin:0; box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-family: 'Crimson Text', Georgia, serif;
+    color: black;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+    padding: .75rem;
+    max-width: 37.5em;
+}
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+       /* @media only screen and (min-width: 37.5em) {
+            header, nav, main, footer { 
+                margin: 1rem auto;
+                padding: .75rem;
+                max-width: 37.5rem;
+            }
+        }
+          @media only screen and (min-width: 64em) {
+            header, nav, main, footer { 
+                margin: 1rem auto;
+                padding: .75rem;
+                max-width: 64rem; 
+            
+                }
+            }*/
+
+header, footer, footer a {
+    text-align: center;
+    background-color: #03122B; /* Navy*/
+    color: white;
+}
+
+/* ------------HEADER--------------- */
+header {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0px;
+
+}
+
+/*header h1 {
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin-top: -15px;
+}*/
+
+#tagline{
+    font-family: 'Crimson Text', Georgia, serif;
+    font-size: .6em;
+    letter-spacing: 0.08em;
+    text-align: left;
+    align-self: center;
+    margin-top: -8px;
+    font-weight: 100;
+    font-style: italic;
+    overflow: hidden;
+    
+}
+
+figure{
+    margin: 0;
+}
+figure .logo {
+	text-align: center;
+	margin: auto;
+}
+
+
+/* ------------NAVIGATION--------------- */
+
+nav {
+    background-color: #C5DC71; /* Bright Green*/
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    margin: 0px;
+}
+
+    @media only screen and (min-width: 37.5em){
+        nav button {
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width: 64em){
+        nav button {
+            display: none;
+        }
+    }
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #03122B; /* Navy*/
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+
+nav ul li a {
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    display: flex;
+    color: #03122B; /* Navy*/
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/*nav ul li a:link {
+    color: white;
+} */
+
+/*nav ul li a:visited {
+    color: #1A2930; /*Navy
+    border-bottom: 2px solid #1A2930;
+} */
+
+nav ul li a:hover {
+    color: white;
+    background-color: rgba(104, 120, 35, 0.2);
+}
+
+nav ul li.active a {
+    background-color: #687823; /* Moss*/
+    
+}
+/*nav ul li a:active {
+    color: white;
+}*/
+
+nav ul.hide {
+        display: none;
+    }
+    
+main {
+    padding: 0;
+}
+
+/*main h2 {
+    display: flex;
+   font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    text-align: left;
+    padding-bottom: 20px;
+   
+}*/
+
+#homepage {
+    position: relative;
+    text-align: left;
+    color: white;
+
+}
+
+#imagetitlehome {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    padding: 10px 15px 10px 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+#homepage h1 {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    margin-bottom: 0em;
+    margin-top: 0em;
+    color: white;
+    padding-top: 10px;
+
+}
+
+#homepage h3 {
+     font-family: 'Crimson Text', Georgia, serif;
+    color: white; 
+    font-size: .7em;
+    line-height: 1.2em;
+    font-weight: bolder;
+    padding: 6px 0 2px 0;
+}
+figure.image { 
+    margin: auto;
+    padding: 0px;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+footer aside {
+    font-size: 1em;
+    padding: 1px;
+}
+footer>p {
+    font-weight: 100;
+    font-size: .6em;
+    padding: 2px;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+} 
+
+
+/* ------------TOURS--------------- */
+
+#imagetitletours {
+    position: absolute;
+    left: 0px;
+    width: 60%;
+    height: 99%;
+    object-fit: cover;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 15px 10px 15px;
+
+}
+
+#imagetitletours h1 {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    margin-bottom: 0em;
+    margin-top: 0em;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;    
+}
+
+#imagetitletours h3 {
+    font-family: 'Crimson Text', Georgia, serif;
+    font-size: .7em;
+    line-height: 1.2em;
+    font-weight: bolder;
+    padding-left: 10px;
+    color: white;
+    padding-top: 10px;
+    overflow: hidden;
+
+}
+
+
+div.holder {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+div#tour1{
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    object-fit: cover;
+    border: 3px solid #03122B; /* Navy*/
+    margin: 10px;
+   
+}
+
+div#tour2 {
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    object-fit: cover;
+    border: 3px solid #03122B; /* Navy*/
+    margin: 10px;
+}
+
+div#tour1 figure img, div#tour2 figure img {
+    object-fit: cover;
+    width: 100%;
+    padding: 0;
+}
+
+figure figcaption {
+    text-align: right; 
+    font-size: .7em;
+    padding-right: 3%;
+}
+
+div.holder h1 {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+
+}
+
+div.holder h2 {
+    color: #03122B; /* Navy*/
+    font-size: 1.1em;
+    text-align: left;
+    line-height: 1.5em;
+    padding-left: 3%;
+    margin-bottom: 3px;
+    padding-top: 3px;
+    background-color: #C5DC71; /* Bright Green*/
+   /* border-bottom: 1px solid #03122B;  Navy*/
+   /* border-top: 1px solid #03122B;  Navy*/
+    
+}
+
+div.holder p {
+    text-align: left;
+    padding-left: 3%;
+    padding-top: 5px;
+   
+    margin-bottom: 15px;
+    
+}
+
+/* ------------EVENTS--------------- */
+
+#events {
+    position: relative;
+    text-align: left;
+    padding: 0px;
+    height: 100%;
+}
+
+
+
+ #imagetitleevents {
+    position: absolute;
+    left: 0px;
+    width: 60%;
+    height: 99%;
+    object-fit: cover;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 15px 10px 15px;
+
+}
+
+ #imagetitleevents h1 {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    margin-bottom: 0em;
+    margin-top: 0em;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;    
+}
+
+#imagetitleevents h3 {
+    font-family: 'Crimson Text', Georgia, serif;
+    font-size: .7em;
+    line-height: 1.2em;
+    font-weight: bolder;
+    padding-left: 10px;
+    color: white;
+    padding-top: 10px;
+    overflow: hidden;
+    
+}
+
+article, #registration {
+    padding: 0px 15px 10px 20px;
+}
+
+article h1, h2, h3 {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    margin: 0.3em 0 0.67em 0 ;
+}
+
+article h1 {
+    font-size: 2em;
+    margin-top: .67em;
+    
+}
+
+article h2 {
+    padding: 0px;
+}
+article h3 {
+    font-size: 1em;
+    margin-top: 0;
+    
+}
+
+#registration h1 {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    
+    
+}
+
+
+
+fieldset {
+    background-color: lightgrey;
+    margin: 1.5em 0;
+}
+
+legend {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 1.2em;
+    color: white;
+    margin-left: -17px;
+    padding-left: 30px;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    background-color: #687823; /* Moss*/
+}
+
+label {
+    display: block;
+    margin: 0 .8em .8em;
+}
+
+label span{
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    display: block;
+    text-transform: uppercase;
+    font-size: .8em;
+    color: #03122B; /* Navy*/
+    padding-top: .5em;
+    padding-left: .2em;
+    padding-bottom: .1em;
+}
+
+main p {
+    margin-bottom: 30px;
+}
+.chunk {
+    background: lightgrey;
+    border: .1em solid #687823;
+    display: block;
+    margin-bottom: 2em;
+    overflow:hidden;
+    position: relative;
+}
+
+.chunk fieldset, .chunk legend {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.chunk .hd {
+    display: block;
+    padding: 0.5em
+}
+
+.chunk .hd .text {
+    margin: 0 .5em;
+    display: block;
+}
+input.submitBtn {
+    -webkit-appearance: none;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    border: solid 1px #687823;
+    width: 50%;
+    margin: .5em 0;
+    font-size: 1.2em;
+    padding: .6em;
+    background: #687823;
+    box-shadow: 4px 4px 10px #666;
+}
+
+/* ------------HOME--------------- */
+#homepage {
+}
+
+
+#homepage section p {
+    margin: 0;
+    padding-top: 10px;
+}
+#homepage ul {
+    font-size: .8em;
+    padding-left: 40px;
+    
+}
+
+/* ------------SERVICE--------------- */
+
+/*#holderservice {
+    overflow: auto;
+}
+
+#table1, #table2 {
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    object-fit: cover;
+    border: 3px solid #03122B; 
+    margin: 10px;
+}*/
+#imagetitleservice {
+    position: absolute;
+    left: 0px;
+    width: 60%;
+    height: 99%;
+    object-fit: cover;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 15px 10px 15px;
+}
+
+#imagetitleservice h1 {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    margin-bottom: 0em;
+    margin-top: 0em;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;    
+}
+
+#imagetitleservice h3 {
+    font-family: 'Crimson Text', Georgia, serif;
+    font-size: .7em;
+    line-height: 1.2em;
+    font-weight: bolder;
+    padding-left: 10px;
+    color: white;
+    padding-top: 10px;
+    overflow: hidden;
+    
+}
+
+.holderservice {
+    overflow: scroll;
+}
+
+.holderservice h1{
+    font-size: 1.5em;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    text-align: left;
+    padding: 0 0 0 1%;
+    margin: 6%  0 1% 0;
+}
+
+.table-bordered {
+    margin: 1%;
+    padding: 1%;
+    border: 2px solid #ddd !important;
+}
+
+.table1 tbody th {
+    padding: 1%;
+}
+
+table caption {
+    padding: .5em 0;
+}
+
+
+
+th {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    background-color: #C5DC71; /* Bright Green*/
+}
+
+.table1 th {
+    padding: 1%;
+}
+
+
+.yes, .no {
+    text-align: center;
+}
+
+.yes {
+    color: white;
+    background-color: #687823; /* Moss*/
+}
+
+.no {
+    color: white;
+    background-color: #03122B; /* Navy*/
+}
+
+.text-center {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    text-align: left;
+}
+
+.table2 td {
+    background-color: #ddd;
+    padding: 2%;
+}
+
+.table2 th {
+    padding: 2%;
+}
+.table2 tbody th {
+    padding: 1%;
+}
+
+/* ------------CONTACT--------------- */
+#contact {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-weight: bolder;
+    
+}
+
+div#contactinformation {
+    background-color: none;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    object-fit: cover;
+    border: 3px solid #03122B; /* Navy*/
+    margin: 10px;
+    padding: 10px;
+   
+    
+}
+
+#contactinformation img {
+    text-align: center;
+    background-color: none;
+
+}
+
+#contactinformation p {
+    text-align: center;
+    margin: 0;
+    padding:0;
+}
+
+div#map {
+    border: 3px solid #03122B; /* Navy*/
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+#imagetitlcontact {
+    position: absolute;
+    left: 0px;
+    width: 60%;
+    height: 99%;
+    object-fit: cover;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px 15px 10px 15px;
+}
+
+#imagetitlcontact h1 {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    margin-bottom: 0em;
+    margin-top: 0em;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;    
+}
+
+#imagetitlcontact h3 {
+    font-family: 'Crimson Text', Georgia, serif;
+    font-size: .7em;
+    line-height: 1.2em;
+    font-weight: bolder;
+    padding-left: 10px;
+    color: white;
+    padding-top: 10px;
+    overflow: hidden;
+    
+}

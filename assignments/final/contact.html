@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Biking Shop | Mountain Spoke | Events</title>
+        <meta name="author" content="Cristina Irwin">
+        <meta name="description" content="Provide customers with information about Cycle the Continental Divide">
+        <!-- Google API font reference -->    
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sarina" rel="stylesheet">
+        <!-- external style references in the proper cascading order -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    </head>
+    
+    <body>
+        <header>
+            <figure class="logo">
+                <img src="images/Mountainspokelogowhite.png" alt="Logo for Mountainspoke"> 
+            </figure>
+            
+            <div id="tagline">
+            <h1>For all your biking needs and more.</h1>           
+            </div>
+            
+      </header>
+      <!-- site navigation use placeholder references -->
+          <nav>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>		
+          </nav>
+        
+    <main>
+        <div id="events">
+            <section id="imagetitlcontact">
+                <h1>Contact Us</h1>
+                <h3>If you have any questions or concers, please contact us. We would love to hear from you. </h3>
+            </section>
+
+
+            <figure class="image">
+                <img src="images/contact.jpg" alt="close up of bike gear" sizes="100vw" srcset="images/contact300.jpg 400w, images/contact600.jpg 800w, images/contact1200.jpg 1200w">
+            </figure>
+        </div>
+            
+        
+        <div class="holder">
+            <div id="contactinformation">
+                <figure>
+                    <img src="images/bluelogo.png" alt="Mountain Spoke Logo">
+                </figure>
+                <p><span id="contact">Address:</span><br>
+                       3950 Valley Commons Drive, Bozeman, MT</p>
+                   <p><span id="contact">Telephone:</span><br>
+                       406.234.1234</p> 
+                   <p><span id="contact">Email:</span><br>
+                       info@mountainspoke.net</p>
+                   <p><span id="contact">Hours:</span><br>
+                       8am-6pm daily</p>
+            </div>
+          
+            <div id="map">
+                <script>
+                function myMap() {
+                  var myCenter = new google.maps.LatLng(45.6722766,-111.0929115);
+                  var mapCanvas = document.getElementById("map");
+                  var mapOptions = {center: myCenter, zoom: 11};
+                  var map = new google.maps.Map(mapCanvas, mapOptions);
+                  var marker = new google.maps.Marker({position:myCenter});
+                  marker.setMap(map);
+                }
+                </script>
+               <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7JE1vjQTO5Vo14M7zacuY-VwCNFp9isQ&callback=myMap"></script>
+                </div>
+           
+
+            
+        </div>
+    </main> 
+    <footer>
+        <aside>
+         <p> Cristina Irwin </p>
+        </aside>
+        
+        <p class="footer-bar">&copy;2018 All Rights Reserved | Mounntain Spike | <span id="currentdate">Placeholder</span>
+        </p>
+        <p>Mountain Spoke | 123 Main Street | Bozeman, MT 90987 | 999.999.9999 | info@mountainspoke.com</p>
+        
+    </footer>
+        <!-- hamburger toggle menu -->
+        <script src="scripts/hamburger.js"></script> 
+        
+        
+        <!-- current date -->
+        <script src="scripts/currentdatetest.js"></script>
+        
+        
+        <!-- Wayfinding element -->
+        <script>
+        var urlString = document.location.href;
+        var urlArray = urlString.split('/');
+        var pageHREF=urlArray[urlArray.length-1];
+        
+        if (pageHREF !=="") {
+            var menu = document.querySelectorAll('ul#primaryNav li a');
+            var i;
+            
+            for(i=0; i<menu.length; i++) {
+                var currentURL=(menu[i].getAttribute("href"));
+                menu[i].parentNode.className="";
+                if (currentURL===pageHREF) {
+                    menu[i].parentNode.className="active";
+          }
+         }
+        }
+        
+        
+        
+        
+        </script>
+        
+    </body>
+    
+</html>

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Biking Shop | Mountain Spoke | Tours</title>
+        <meta name="author" content="Cristina Irwin">
+        <meta name="description" content="Provide customers information about biking tours offerec.">
+        <!-- Google API font reference -->    
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sarina" rel="stylesheet">
+        <!-- external style references in the proper cascading order -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    </head>
+    
+    <body>
+        <header>
+            <figure class="logo">
+                <img src="images/Mountainspokelogowhite.png" alt="Logo for Mountainspoke"> 
+            </figure>
+            
+            <div id="tagline">
+            <h1>For all your biking needs and more.</h1>           
+            </div>
+            
+      </header>
+      <!-- site navigation use placeholder references -->
+          <nav>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>		
+          </nav>
+        
+    <main>
+        <div id="events">
+            <section id="imagetitletours">
+                <h1>Tours Around Bozeman</h1>
+                <h3>We offer exciting and adventurous bike tours around the Bozeman area. Our tours are run by local experienced guides. </h3>
+            </section>
+
+
+            <figure class="image">
+                <img src="mountaintours.jpg" alt="Biking Tours" sizes="100vw" srcset="images/mountaintours300.jpg 400w, images/mountaintours600.jpg 800w, images/mountaintours1200.jpg 1200w">
+            </figure>
+        </div>
+        
+        <div class="holder">
+            <div id="tour1">
+                <h1>Emerald Lake</h1>
+                    <figure>
+                    <img src="images/emeraldlake.jpg" alt="Emerald Lake" sizes="100vw" srcset="images/emeraldlake300.jpg 400w, images/emeraldlake600.jpg 800w, images/emeraldlake1200.jpg 1200w">
+                    <figcaption>Emerald Lake</figcaption>
+                </figure>
+                   <h2>Trail Location</h2>
+                   <p>South of Bozeman down Hyalite Canyon road, about a mile past the waterfall.</p> 
+                   <h2>Trail Type</h2>
+                   <p>100% single track mountain bike trail.</p>
+                   <h2>Distance</h2>
+                   <p>9 miles out and back </p>
+                   <h2>Skill Level</h2>
+                   <p>Advanced skills</p>
+            </div>
+
+            <div id="tour2">
+               <h1>Sourdough Ridge Loop</h1>
+                <figure>
+                    <img src="images/sourdough.jpg" alt="Sourdough Loop" sizes="100vw" srcset="images/sourdough300.jpg 400w, images/sourdough600.jpg 800w, images/sourdough1200.jpg 1200w">
+                    <figcaption>Sourdough Loop</figcaption>
+                </figure>
+                   <h2>Trail Location</h2>
+                   <p>Located on the east edge of Bozeman's city limits.</p> 
+                   <h2>Trail Type</h2>
+                   <p>1.6 miles on paved road; 1.9 miles on singletrack or gravel path.</p>
+                   <h2>Distance</h2>
+                   <p>3.5 total miles</p>
+                   <h2>Skill Level</h2>
+                   <p>Mostly easy, with two short but strenuous climbs.</p>
+            </div>
+      </div>    
+    </main> 
+    <footer>
+        <aside>
+         <p> Cristina Irwin </p>
+        </aside>
+        
+        <p class="footer-bar">&copy;2018 All Rights Reserved | Mounntain Spike | <span id="currentdate">Placeholder</span>
+        </p>
+        <p>Mountain Spoke | 123 Main Street | Bozeman, MT 90987 | 999.999.9999 | info@mountainspoke.com</p>
+        
+    </footer>
+        <!-- hamburger toggle menu -->
+        <script src="scripts/hamburger.js"></script> 
+        
+        
+        <!-- current date -->
+        <script src="scripts/currentdatetest.js"></script>
+        
+        
+        <!-- Wayfinding element -->
+        <script>
+        var urlString = document.location.href;
+        var urlArray = urlString.split('/');
+        var pageHREF=urlArray[urlArray.length-1];
+        
+        if (pageHREF !=="") {
+            var menu = document.querySelectorAll('ul#primaryNav li a');
+            var i;
+            
+            for(i=0; i<menu.length; i++) {
+                var currentURL=(menu[i].getAttribute("href"));
+                menu[i].parentNode.className="";
+                if (currentURL===pageHREF) {
+                    menu[i].parentNode.className="active";
+          }
+         }
+        }
+        
+        
+        
+        
+        </script>
+        
+    </body>
+    
+</html>

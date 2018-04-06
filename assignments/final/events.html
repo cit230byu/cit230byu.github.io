@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Biking Shop | Mountain Spoke | Events</title>
+        <meta name="author" content="Cristina Irwin">
+        <meta name="description" content="Provide customers with information about Cycle the Continental Divide">
+        <!-- Google API font reference -->    
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sarina" rel="stylesheet">
+        <!-- external style references in the proper cascading order -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    </head>
+    
+    <body>
+        <header>
+            <figure class="logo">
+                <img src="images/Mountainspokelogowhite.png" alt="Logo for Mountainspoke"> 
+            </figure>
+            
+            <div id="tagline">
+            <h1>For all your biking needs and more.</h1>           
+            </div>
+            
+      </header>
+      <!-- site navigation use placeholder references -->
+          <nav>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>		
+          </nav>
+        
+    <main>
+        <div id="events">
+            <section id="imagetitleevents">
+                <h1>Cycle the Continental Divide</h1>
+                <h3>This is an annual Event taking place Saturday, June 9, 2018. Cycle the Montana portion of the Great Divide Mountain Bike Route. </h3>
+            </section>
+
+
+            <figure class="image">
+                <img src="images/biketour.jpg" alt="Biking on the Divide" sizes="100vw" srcset="images/biketour300.jpg 400w, images/biketour600.jpg 800w, images/biketour1200.jpg 1200w">
+            </figure>
+        </div>
+            
+        <article>
+            
+            <h1>Ride the longest off-pavement route in the world.</h1>
+                <p>Surfaces range from pavement, good gravel roads, four-wheel-drive roads, single track, or old railroad beds. You will start in Rooseville in the deep woods and near Glacier National Park. You may see grizzly bear, elk, moose, and/ or mountain lions. The Montana section is known for mountainous riding in tall forest with occasional dips into small towns. The route continues to Polaris, then ends in Lakeview, Montana. The total route is 660 miles.</p>
+
+                <h2>Cost</h2>
+                <h3>$100</h3>
+                <p>This covers any permits that are required, biking jersey and any emergency services that are needed.</p>
+
+                <h2>Additional Information</h2>
+                <p>All bikers must carry water, food, maps spare tire and bike kit with them. You can take as long as you need to over the weekend. Your permits are valid all summer long. </p>
+        </article>
+        
+        
+        <div id="registration">  
+            <h1>Registration</h1>
+                <p> Progress:<progress value="3" max="5"></progress></p>
+                  <form action="thanks.html" method="get" enctype="multipart/form-data" name="registrationform">	
+                <div class="chunk">
+                    <fieldset>
+                        <legend class="hd"><span>Personal Information</span></legend>
+                            <label><span>Full Name:</span><input name="Fullname" type="text" placeholder="Full Name" pattern="[a-zA-Z -._]{5,}" required autofocus title="Please provide your first and last name (minimum of 5 characters)"></label>
+                        
+                            <label><span>Address:</span><input name="address" type="text" placeholder="123 Main Street" required title="Please provide a valid address"></label>
+                        
+                            <label><span>Email:</span><input name="email" type="email" placeholder="John@gmail.com" required title="Please provide a valid email address"></label>
+                        
+                            <label><span>Phone:</span><input name="tel" type="tel" required title="Please provide a valid phone number"></label>
+                        
+                            <label><span>Zip Code:</span><input name="zipcode" type="number" required title ="Please provide your Zip Code"></label>
+                        
+                            <label><span>Home State or Country</span><input name="location" type="text" required title="Please provide where you are from"></label>
+                        
+                            <label><span>Birthdate Date:</span><input name="date" type="date"></label>
+                    </fieldset>
+                </div>
+
+                <div class="chunk">
+                    <fieldset>
+                        <legend class="hd"><span class="text">Additional Information</span></legend>
+                    
+
+                           <label><span>Biking level:</span></label>
+                                <label><input type="radio" name="dangerlevel" value="yes"> Beginner</label>
+                                <label><input type="radio" name="dangerlevel" value="maybe"> Intermediate</label>
+                                <label><input type="radio" name="dangerlevel" value="no"> Experienced<br></label>
+
+                        <label><span>Additional Comments or Special Accommodations:</span><textarea name="additionalinfo" rows="10" cols="40"></textarea></label>
+                    </fieldset>
+                </div>
+                   <input type="submit" value="Submit" class="submitBtn">	
+                    <input type="hidden" value="Registration" name="subject">
+                    <input name="redirect" type="hidden" value="thanks.html">	   
+                      
+                </form>
+           </div>
+    </main> 
+    <footer>
+        <aside>
+         <p> Cristina Irwin </p>
+        </aside>
+        
+        <p class="footer-bar">&copy;2018 All Rights Reserved | Mounntain Spike | <span id="currentdate">Placeholder</span>
+        </p>
+        <p>Mountain Spoke | 123 Main Street | Bozeman, MT 90987 | 999.999.9999 | info@mountainspoke.com</p>
+        
+    </footer>
+        <!-- hamburger toggle menu -->
+        <script src="scripts/hamburger.js"></script> 
+        
+        
+        <!-- current date -->
+        <script src="scripts/currentdatetest.js"></script>
+        
+        
+        <!-- Wayfinding element -->
+        <script>
+        var urlString = document.location.href;
+        var urlArray = urlString.split('/');
+        var pageHREF=urlArray[urlArray.length-1];
+        
+        if (pageHREF !=="") {
+            var menu = document.querySelectorAll('ul#primaryNav li a');
+            var i;
+            
+            for(i=0; i<menu.length; i++) {
+                var currentURL=(menu[i].getAttribute("href"));
+                menu[i].parentNode.className="";
+                if (currentURL===pageHREF) {
+                    menu[i].parentNode.className="active";
+          }
+         }
+        }
+        
+        
+        
+        
+        </script>
+        
+    </body>
+    
+</html>

@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Biking Shop | Mountain Spoke | Tours</title>
+        <meta name="author" content="Cristina Irwin">
+        <meta name="description" content="Provide customers information about biking tours offerec.">
+        <!-- Google API font reference -->    
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sarina" rel="stylesheet">
+        <!-- external style references in the proper cascading order -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    </head>
+    
+    <body>
+        <header>
+            <figure class="logo">
+                <img src="images/Mountainspokelogowhite.png" alt="Logo for Mountainspoke"> 
+            </figure>
+            
+            <div id="tagline">
+            <h1>For all your biking needs and more.</h1>           
+            </div>
+            
+      </header>
+      <!-- site navigation use placeholder references -->
+          <nav>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>		
+          </nav>
+        
+    <main>
+        <div id="events">
+            <section id="imagetitleservice">
+                <h1>Full Service Bike Shop</h1>
+                <h3>We're a full-service bike shop staffed with experienced local bike whisperers. All you need to do is bring us your bike and we'll handle the rest. </h3>
+            </section>
+
+            <figure class="image">
+                <img src="bicyclerepair.jpg" alt="Bike Shop" sizes="100vw" srcset="images/bicyclerepair300.jpg 400w, images/bicyclerepair600.jpg 800w, images/bicyclerepair1200.jpg 1200w">
+            </figure>
+        </div>
+        
+        
+        <div class="holderservice">
+            <h1>Tune-Ups</h1>
+            <div class="row">
+                <div class="table1">
+                     <div class="table-responsive" data-pattern="priority-columns">
+                        <table class="table table-bordered table-hover">
+                        <caption class="text-center">scroll right</caption>
+               
+                   
+                        <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>Adustments on shifting & braking</th>
+                            <th data-priority="1">Tire inflation</th>
+                            <th data-priority="2">Functionality & safety inspection</th>
+                            <th data-priority="3">Chain lubrication</th>
+                            <th data-priority="4">Component Lubrication</th>
+                            <th data-priority="5">Lateral wheel truing</th>
+                            <th data-priority="6">Bearing inspection and adjustment</th>
+                            <th data-priority="7">Frame cleaning</th>
+                            <th data-priority="8">Cable & Housing replacement</th>
+                            <th data-priority="9">Removal & cleaning of drivetrain</th>
+                        </tr>
+                        </thead>
+                            
+                        <tbody>    
+                        <tr>
+                            <th>Silver Tune-up: $50</th>
+                            <td class="yes">yes</td>
+                            <td class="yes">yes</td>
+                            <td class="yes">yes</td>
+                            <td class="yes">yes</td>
+                            <td class="no">no</td>
+                            <td class="no">no</td>
+                            <td class="no">no</td>
+                            <td class="no">no</td>
+                            <td class="no">no</td>
+                            <td class="no">no</td>
+                        </tr>
+                        <tr>
+                            <th>Gold Tune-up: $90</th>
+                            <td class="yes">yes</td>
+                            <td class="yes">yes</td>
+                            <td class="yes">yes</td>
+                            <td class="yes">yes</td>
+                            <td class="yes">yes</td>
+                            <td class="yes">yes</td>
+                            <td class="yes">yes</td>
+                            <td class="yes">yes</td>
+                            <td class="no">no</td>
+                            <td class="no">no</td>
+                        </tr>
+                         <tr>
+                            <th>Platinum Tune-up: $150</th>
+                            <td class="yes">yes</td>
+                            <td class="yes">yes</td>
+                            <td class="yes">yes</td>
+                            <td class="yes">yes</td>
+                            <td class="yes">yes</td>
+                            <td class="yes">yes</td>
+                            <td class="yes">yes</td>
+                            <td class="yes">yes</td>
+                            <td class="yes">yes</td>
+                            <td class="yes">yes</td>
+                        </tr>
+                    </tbody>
+                         </table>
+                    </div>
+                </div>
+                   
+                    
+            </div>
+
+            <div class="table2">
+               <h1>Services/Repairs</h1>
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th id="suspensions" data-priority="1">Suspension Tuning</th>
+                            <th id="conversions" data-priority="2">Tubelss Conversion</th>
+                            <th id="resorations" data-priority="3"></th>
+                            <th id="customs" data-priority="4">Custom Wheel Building</th>
+                            <th id="boxings" data-priority="5">Bike Boxing</th>
+                            
+                        </tr>
+                        </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Description</th>
+                                    <td id="suspensiond">Fork or rear tuning or overhaul, from oil changes to seal replacements.</td>
+                                    <td id="conversiond">Switch to the system that fixes your flat while you ride. YOu can run lower pressure which means beter traction. We will teach you how to maintain this system.</td>
+                                    <td id="resorationd">We care about your classic ride and we'll do our best to bring it back to its original beauty.</td>
+                                    <td id="customd">Have your dreams come true. Pick hubs, rims, spokes . . .  </td>
+                                    <td id="boxingd">We will package your bike for shipping to anywhere.</td>
+                                </tr>
+                                <tr>
+                                    <th>Cost</th>
+                                    <td id="suspensionc">$39</td>
+                                    <td id="conversionc">$69</td>
+                                    <td id="resorationc">Call for free quote</td>
+                                    <td id="customc">Call for free quote</td>
+                                    <td id="boxingc">$40</td>
+                                </tr>
+                        </tbody>
+                    </table>
+                
+            </div>
+      </div>    
+    </main> 
+    <footer>
+        <aside>
+         <p> Cristina Irwin </p>
+        </aside>
+        
+        <p class="footer-bar">&copy;2018 All Rights Reserved | Mounntain Spike | <span id="currentdate">Placeholder</span>
+        </p>
+        <p>Mountain Spoke | 123 Main Street | Bozeman, MT 90987 | 999.999.9999 | info@mountainspoke.com</p>
+        
+    </footer>
+        <!-- hamburger toggle menu -->
+        <script src="scripts/hamburger.js"></script> 
+        
+        
+        <!-- current date -->
+        <script src="scripts/currentdatetest.js"></script>
+        
+        
+        <!-- Wayfinding element -->
+        <script>
+        var urlString = document.location.href;
+        var urlArray = urlString.split('/');
+        var pageHREF=urlArray[urlArray.length-1];
+        
+        if (pageHREF !=="") {
+            var menu = document.querySelectorAll('ul#primaryNav li a');
+            var i;
+            
+            for(i=0; i<menu.length; i++) {
+                var currentURL=(menu[i].getAttribute("href"));
+                menu[i].parentNode.className="";
+                if (currentURL===pageHREF) {
+                    menu[i].parentNode.className="active";
+          }
+         }
+        }
+                
+        </script>
+         <!-- Json -->
+        <script>
+        var serviceObject = new XMLHttpRequest();
+
+serviceObject.open('GET', 'https://cit230web_files.github.io/assignments/final/data/pricedata.json', 'true');
+
+serviceObject.send();
+
+serviceObject.onload = function() {
+    
+    var serviceInfo = JSON.parse(serviceObject.responseText);
+    console.log(serviceInfo);
+    
+    document.getElementById('suspensions').innerHTML = serviceInfo.table["0"].service;
+    document.getElementById('suspensiond').innerHTML = serviceInfo.table["0"].description;
+    document.getElementById('suspensionc').innerHTML = townInfo.table["0"].cost;
+   
+    document.getElementById('conversions').innerHTML = serviceInfo.table["1"].service;
+    document.getElementById('conversiond').innerHTML = serviceInfo.table["1"].description;
+    document.getElementById('conversionc').innerHTML = townInfo.table["1"].cost;
+    
+    document.getElementById('resorations').innerHTML = serviceInfo.table["2"].service;
+    document.getElementById('resorationd').innerHTML = serviceInfo.table["2"].description;
+    document.getElementById('resorationc').innerHTML = townInfo.table["2"].cost;
+    
+    document.getElementById('customs').innerHTML = serviceInfo.table["3"].service;
+    document.getElementById('customd').innerHTML = serviceInfo.table["3"].description;
+    document.getElementById('customc').innerHTML = townInfo.table["3"].cost;
+    
+    document.getElementById('boxings').innerHTML = serviceInfo.table["2"].service;
+    document.getElementById('boxingd').innerHTML = serviceInfo.table["2"].description;
+    document.getElementById('boxingc').innerHTML = townInfo.table["2"].cost;
+} //End of onload
+    
+        
+        </script>
+    </body>
+    
+</html>
