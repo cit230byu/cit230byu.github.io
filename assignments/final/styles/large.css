@@ -1,7 +1,6 @@
 @media only screen and (min-width: 1200px) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
-  header, nav, main, footer { 
-     }
+
     /* ------------header---------------*/
     
     figure.logo {
@@ -42,14 +41,8 @@
     /* ------------Content---------------*/
    
     
-    section {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    
-    #homepage, #events h1 {
-    font-size: 3.4em;
+    #homepage h1, #events h1, #tours h1, #service h1, #sales h1 {
+    font-size: 3.5em;
     padding-top: 10px;
     padding-left: 60px;
 
@@ -57,9 +50,9 @@
    
     
 
-    #homepage, #events h3 {
+    #homepage h3, #events h3, #tours h3, #service h3, #sales h3 {
     color: white; 
-    font-size: 1.2em;
+    font-size: 1.9em;
     line-height: 1.8em;
     font-weight: bolder;
     padding: 16px 30px 12px 55px;
@@ -86,5 +79,9 @@
         font-size: 3em;
     }
     
+    /* ------------SALES--------------*/
+     #accordion-resizer {
+    height: 1200px;
+  }
 }
 

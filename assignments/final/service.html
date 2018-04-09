@@ -133,30 +133,30 @@
                     <thead>
                         <tr>
                             <th>&nbsp;</th>
-                            <th id="suspensions" data-priority="1">Suspension Tuning</th>
-                            <th id="conversions" data-priority="2">Tubelss Conversion</th>
+                            <th id="suspensions" data-priority="1"></th>
+                            <th id="conversions" data-priority="2"></th>
                             <th id="resorations" data-priority="3"></th>
-                            <th id="customs" data-priority="4">Custom Wheel Building</th>
-                            <th id="boxings" data-priority="5">Bike Boxing</th>
+                            <th id="customs" data-priority="4"></th>
+                            <th id="boxings" data-priority="5"></th>
                             
                         </tr>
                         </thead>
                             <tbody>
                                 <tr>
                                     <th>Description</th>
-                                    <td id="suspensiond">Fork or rear tuning or overhaul, from oil changes to seal replacements.</td>
-                                    <td id="conversiond">Switch to the system that fixes your flat while you ride. YOu can run lower pressure which means beter traction. We will teach you how to maintain this system.</td>
-                                    <td id="resorationd">We care about your classic ride and we'll do our best to bring it back to its original beauty.</td>
-                                    <td id="customd">Have your dreams come true. Pick hubs, rims, spokes . . .  </td>
-                                    <td id="boxingd">We will package your bike for shipping to anywhere.</td>
+                                    <td id="suspensiond"></td>
+                                    <td id="conversiond"></td>
+                                    <td id="resorationd"></td>
+                                    <td id="customd"></td>
+                                    <td id="boxingd"></td>
                                 </tr>
                                 <tr>
                                     <th>Cost</th>
-                                    <td id="suspensionc">$39</td>
-                                    <td id="conversionc">$69</td>
-                                    <td id="resorationc">Call for free quote</td>
-                                    <td id="customc">Call for free quote</td>
-                                    <td id="boxingc">$40</td>
+                                    <td id="suspensionc"></td>
+                                    <td id="conversionc"></td>
+                                    <td id="resorationc"></td>
+                                    <td id="customc"></td>
+                                    <td id="boxingc"></td>
                                 </tr>
                         </tbody>
                     </table>
@@ -166,7 +166,7 @@
     </main> 
     <footer>
         <aside>
-         <p> Cristina Irwin </p>
+         <p> Cristina Irwin | <a href="resource.html">Resources</a> | <a href ="#">Video</a></p>
         </aside>
         
         <p class="footer-bar">&copy;2018 All Rights Reserved | Mounntain Spike | <span id="currentdate">Placeholder</span>
@@ -217,23 +217,23 @@ serviceObject.onload = function() {
     
     document.getElementById('suspensions').innerHTML = serviceInfo.table["0"].service;
     document.getElementById('suspensiond').innerHTML = serviceInfo.table["0"].description;
-    document.getElementById('suspensionc').innerHTML = townInfo.table["0"].cost;
+    document.getElementById('suspensionc').innerHTML = serviceInfo.table["0"].cost;
    
     document.getElementById('conversions').innerHTML = serviceInfo.table["1"].service;
     document.getElementById('conversiond').innerHTML = serviceInfo.table["1"].description;
-    document.getElementById('conversionc').innerHTML = townInfo.table["1"].cost;
+    document.getElementById('conversionc').innerHTML = serviceInfo.table["1"].cost;
     
     document.getElementById('resorations').innerHTML = serviceInfo.table["2"].service;
     document.getElementById('resorationd').innerHTML = serviceInfo.table["2"].description;
-    document.getElementById('resorationc').innerHTML = townInfo.table["2"].cost;
+    document.getElementById('resorationc').innerHTML = serviceInfo.table["2"].cost;
     
     document.getElementById('customs').innerHTML = serviceInfo.table["3"].service;
     document.getElementById('customd').innerHTML = serviceInfo.table["3"].description;
-    document.getElementById('customc').innerHTML = townInfo.table["3"].cost;
+    document.getElementById('customc').innerHTML = serviceInfo.table["3"].cost;
     
     document.getElementById('boxings').innerHTML = serviceInfo.table["2"].service;
     document.getElementById('boxingd').innerHTML = serviceInfo.table["2"].description;
-    document.getElementById('boxingc').innerHTML = townInfo.table["2"].cost;
+    document.getElementById('boxingc').innerHTML = serviceInfo.table["2"].cost;
 } //End of onload
     
         

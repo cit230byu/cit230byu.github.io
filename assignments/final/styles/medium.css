@@ -3,8 +3,8 @@
   
     
     header, nav, main, footer { 
-    max-width: 100%;
-    padding: 0;
+        max-width: 100%;
+        padding: 0;
     
     
      }
@@ -35,12 +35,12 @@
         }
     
     nav ul li a {
-    display: flex;
-    flex: 1 1 auto;
-    text-align: center;
-    font-size: 1.3em;
-    font-weight: bold;
-    padding: 14px 16px;
+        display: flex;
+        flex: 1 1 auto;
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: bold;
+        padding: 10px 16px;
     }
 
     nav ul.hide {
@@ -54,50 +54,33 @@
         width: 100%;
     }
     
-   #imagetitlehome {
-    position: absolute;
-    width: 50%;
-    height: 99%;
-    object-fit: cover;
-    overflow: hidden;
-    padding: 20px 30px 20px 30px;
-    background-color: rgba(0, 0, 0, 0.1);
-    }    
-    
-    
     #homepage h1 {
-    font-family: 'Roboto Condensed', Arial, sans-serif;
-    font-size: 2.1em;
-    text-align: left;
-    margin-bottom: 0em;
-    margin-top: 0em;
-    color: white;
-    padding-top: 10px;
-    padding-left: 20px;
-
+        font-size: 2.5em;
+        padding-left: 20px;
+        color: white;
     }
 
     #homepage h3 {
-    color: white; 
-    font-size: 1em;
-    line-height: 1.6em;
-    font-weight: bolder;
-    padding: 16px 20px 12px 20px;
+        color: white; 
+        font-size: 1.3em;
+        line-height: 1.6em;
+        font-weight: bolder;
+        padding: 16px 20px 12px 20px;
     }
     
 
     article, #registration {
-    padding: 0px 40px 10px 40px;
+        padding: 0px 40px 10px 40px;
     }
 
     article h1, h2, h3 {
-    font-family: 'Roboto Condensed', Arial, sans-serif;
-    margin: 0.3em 0 0.67em 0 ;
+        font-family: 'Roboto Condensed', Arial, sans-serif;
+        margin: 0.3em 0 0.67em 0 ;
     }
 
     article h1 {
-    font-size: 2em;
-    margin-top: .67em;
+        font-size: 2em;
+        margin-top: .67em;
     
     }
 
@@ -105,17 +88,21 @@
     padding: 0px;
     }
     article h3 {
-    font-size: 1em;
-    margin-top: 0;
+        font-size: 1em;
+        margin-top: 0;
     
     }
     
      /*--------------footer--------------------*/
     
     footer {
-        width: 100%;
+        max-width: 100%;
+        height: 70px;
     }
-
+    footer aside {
+        font-size: 1em;
+        padding: 5px;
+    }
 
     /*--------------Gallery--------------------*/
   div.holder {
@@ -135,7 +122,7 @@
     /* ------------EVENTS--------------- */
     
     #imagetitleevents h1 {
-    font-size: 2.1em;
+    font-size: 2.5em;
     padding-left: 20px;
     color: white;
     
@@ -143,7 +130,7 @@
 
     #imagetitleevents h3 {
     color: white;
-    font-size: 1em;
+    font-size: 1.3em;
     line-height: 1.6em;
     font-weight: bolder;
     padding-left: 20px;
@@ -151,19 +138,23 @@
 
     
     /* ------------TOURS--------------- */
-     #imagetitletours h1 {
-    font-size: 2.1em;
+    
+
+    #tours h3 {
+    color: white; 
+    font-size: 1.3em;
+    line-height: 1.6em;
+    font-weight: bolder;
+    padding: 16px 20px 12px 20px;
+    }
+    
+    #imagetitletours h1 {
+    font-size: 2.5em;
     padding-left: 20px;
     color: white;
     }
 
-    #imagetitletours h3 {
-    color: white;
-    font-size: 1em;
-    line-height: 1.6em;
-    font-weight: bolder;
-    padding-left: 20px;
-    }
+  
     
     
     
@@ -171,14 +162,14 @@
     
     
     #imagetitleservice h1 {
-    font-size: 2.1em;
+    font-size: 2.5em;
     padding-left: 20px;
     color: white;
     }
 
     #imagetitleservice h3 {
     color: white;
-    font-size: 1em;
+    font-size: 1.3em;
     line-height: 1.6em;
     font-weight: bolder;
     padding-left: 20px;
@@ -196,14 +187,14 @@
     /* ------------CONTACT--------------- */
     
     #imagetitlcontact h1 {
-    font-size: 2.1em;
+    font-size: 2.5em;
     padding-left: 20px;
     color: white;
     }
 
     #imagetitlcontact h3 {
     color: white;
-    font-size: 1em;
+    font-size: 1.3em;
     line-height: 1.6em;
     font-weight: bolder;
     padding-left: 20px;
@@ -212,7 +203,47 @@
     #contactinformation img {
     text-align: center;
     margin: 30px 0px 0px 0px;
-    background-color: none;
+    }
+    
+    /* ------------SALES--------------- */
+    
+   #imagetitlesales h1 {
+    font-size: 2.1em;
+    padding-left: 20px;
+    color: white;
+    }
 
+   #imagetitlesales h3 {
+    color: white;
+    font-size: 1.3em;
+    line-height: 1.6em;
+    font-weight: bolder;
+    padding-left: 20px;
+    }
+    
+    #contactinformation img {
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+    }
+    
+    #accordion {
+    padding:  5px 0 5px 0;
+    }
+
+    #specialized, #trek ,#cannondale {
+    font-size: 2em;
+    color: white;
+    padding: 5px 0 5px 30px;
+    background-color: #03122B; /* Navy*/
+    }
+    
+   .salesinfo h4, .salesinfo p {
+        padding-left: 30px;
+    }
+    
+    #accordion-resizer {
+    height: 1000px;
+  }
+    
 }
 

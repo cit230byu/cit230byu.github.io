@@ -12,22 +12,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
     padding: .75rem;
     max-width: 37.5em;
 }
-    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-       /* @media only screen and (min-width: 37.5em) {
-            header, nav, main, footer { 
-                margin: 1rem auto;
-                padding: .75rem;
-                max-width: 37.5rem;
-            }
-        }
-          @media only screen and (min-width: 64em) {
-            header, nav, main, footer { 
-                margin: 1rem auto;
-                padding: .75rem;
-                max-width: 64rem; 
-            
-                }
-            }*/
+    
 
 header, footer, footer a {
     text-align: center;
@@ -45,13 +30,6 @@ header {
     margin: 0px;
 
 }
-
-/*header h1 {
-    font-size: 20px;
-    letter-spacing: 0.2em;
-    text-align: center;
-    margin-top: -15px;
-}*/
 
 #tagline{
     font-family: 'Crimson Text', Georgia, serif;
@@ -121,15 +99,6 @@ nav ul li a {
 }
 
 
-/*nav ul li a:link {
-    color: white;
-} */
-
-/*nav ul li a:visited {
-    color: #1A2930; /*Navy
-    border-bottom: 2px solid #1A2930;
-} */
-
 nav ul li a:hover {
     color: white;
     background-color: rgba(104, 120, 35, 0.2);
@@ -139,9 +108,7 @@ nav ul li.active a {
     background-color: #687823; /* Moss*/
     
 }
-/*nav ul li a:active {
-    color: white;
-}*/
+
 
 nav ul.hide {
         display: none;
@@ -149,20 +116,12 @@ nav ul.hide {
     
 main {
     padding: 0;
+    width: 100%;
 }
 
-/*main h2 {
-    display: flex;
-   font-family: 'Roboto Condensed', Arial, sans-serif;
-    font-weight: bold;
-    font-size: 1.4rem;
-    margin-bottom: 5px;
-    text-align: left;
-    padding-bottom: 20px;
-   
-}*/
 
 #homepage {
+    width: 100%;
     position: relative;
     text-align: left;
     color: white;
@@ -200,8 +159,13 @@ main {
     padding: 6px 0 2px 0;
 }
 figure.image { 
+    width: 100%;
     margin: auto;
     padding: 0px;
+}
+
+.image img {
+    width: 100%;
 }
 
 
@@ -217,8 +181,11 @@ footer {
     max-width: 100%;
 }
 footer aside {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    text-transform: uppercase;
     font-size: 1em;
-    padding: 1px;
+    margin-top: 5px;
+
 }
 footer>p {
     font-weight: 100;
@@ -229,6 +196,13 @@ footer>p {
 
 
 /* ------------TOURS--------------- */
+
+#tours {
+    position: relative;
+    text-align: left;
+    padding: 0px;
+    height: 100%;
+}
 
 #imagetitletours {
     position: absolute;
@@ -316,9 +290,7 @@ div.holder h2 {
     margin-bottom: 3px;
     padding-top: 3px;
     background-color: #C5DC71; /* Bright Green*/
-   /* border-bottom: 1px solid #03122B;  Navy*/
-   /* border-top: 1px solid #03122B;  Navy*/
-    
+
 }
 
 div.holder p {
@@ -338,7 +310,6 @@ div.holder p {
     padding: 0px;
     height: 100%;
 }
-
 
 
  #imagetitleevents {
@@ -402,7 +373,6 @@ article h3 {
 
 #registration h1 {
     font-family: 'Roboto Condensed', Arial, sans-serif;
-    
     
 }
 
@@ -577,6 +547,7 @@ table caption {
 th {
     font-family: 'Roboto Condensed', Arial, sans-serif;
     background-color: #C5DC71; /* Bright Green*/
+    text-align: left;
 }
 
 .table1 th {
@@ -603,6 +574,7 @@ th {
     text-align: left;
 }
 
+
 .table2 td {
     background-color: #ddd;
     padding: 2%;
@@ -616,14 +588,13 @@ th {
 }
 
 /* ------------CONTACT--------------- */
-#contact {
+.contact {
     font-family: 'Roboto Condensed', Arial, sans-serif;
     font-weight: bolder;
     
 }
 
 div#contactinformation {
-    background-color: none;
     text-align: center;
     margin: 0px 0px 0px 0px;
     object-fit: cover;
@@ -636,7 +607,6 @@ div#contactinformation {
 
 #contactinformation img {
     text-align: center;
-    background-color: none;
 
 }
 
@@ -685,5 +655,92 @@ div#map {
     color: white;
     padding-top: 10px;
     overflow: hidden;
+
+}
+/* ------------SALES--------------- */
+#sales {
+    position: relative;
+    text-align: left;
+    padding: 0px;
+    height: 100%;
+}
+
+
+
+ #imagetitlesales {
+    position: absolute;
+    left: 0px;
+    width: 60%;
+    height: 99%;
+    object-fit: cover;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 15px 10px 15px;
+
+}
+
+ #imagetitlesales h1 {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+     font-size: 1.3em;
+    text-align: left;
+    margin-bottom: 0em;
+    margin-top: 0em;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;    
+}
+
+#imagetitlesales h3 {
+    font-family: 'Crimson Text', Georgia, serif;
+    font-size: .7em;
+    line-height: 1.2em;
+    font-weight: bolder;
+    padding-left: 10px;
+    color: white;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+#accordion {
+    padding: 10px;
+}
+
+.salesinfo h4 {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+}
+
+#specialized, #trek ,#cannondale {
+    font-size: 1.5em;
+    color: white;
+    padding: 5px;
+    background-color: #03122B; /* Navy*/
+}
+
+
+#accordion-resizer {
+   
+    height: 550px;
+  }
+
+/* ------------THANK YOU--------------- */
+#thanks {
+    padding: 10px;
+    text-align: center;
+}
+
+/* ------------RESOURCES--------------- */
+#resource {
+    text-align: center;
+    padding: 20px;
+}
+
+#resource h1 {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
     
+}
+footer a {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    text-decoration: none;
 }
