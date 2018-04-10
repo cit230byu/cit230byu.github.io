@@ -244,6 +244,9 @@
     #accordion-resizer {
     height: 1000px;
   }
-    
+ /* ------------VIDEO--------------- */
+    video {
+    margin: 1% 33% 1% 33%;
+}
 }
 

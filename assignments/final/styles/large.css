@@ -83,5 +83,9 @@
      #accordion-resizer {
     height: 1200px;
   }
+     /* ------------VIDEO--------------- */
+    video {
+    margin: 1% 40% 1% 40%;
+}
 }
 
