@@ -16,12 +16,12 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 
 header, footer, footer a {
     text-align: center;
-    background-color: #03122B; /* Navy*/
     color: white;
 }
 
 /* ------------HEADER--------------- */
 header {
+    background-color: #03122B; /* Navy*/
     font-family: 'Roboto Condensed', Arial, sans-serif;
     height: 200px;
     display: flex;
@@ -176,6 +176,7 @@ section {
 
 
 footer {
+    background-color: #58C7E4; 
     display: flex;
     flex-direction: column;
     max-width: 100%;
